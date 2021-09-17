@@ -11,33 +11,35 @@ int main() {
 
       float a = 0;
       float b = 0;
-      int answer = 0;
+      float Resultado = 0;
 
       char suma, resta, producto, division, modulo, operacion;
       string operation;
 
-     cout << "Enter the first number" << endl;
+     cout << "Este programa permite hacer operaciones basicas entre dos numeros" << endl;
+      
+     cout << "Primer numero" << endl;
      cin >> a; // read 1st number
 
-     cout << "Enter the operation" << endl;
+     cout << "Operacion" << endl;
      cin >> operation; // read operation
 
-     cout << "Enter the second number" << endl;
+     cout << "Segundo numero" << endl;
      cin >> b; // read 2nd number
 
     //indicamos las posibles opciones que puede introducir e imprimir
 
     if(operation == "+") {
-        answer = a + b;
+        cout << "Resultado:" << a << " + " << b << " = " << a + b << endl;
     }
     if(operation == "-") {
-        answer = a - b;
+        cout << "Resultado:" << a << " - " << b << " = " << a - b << endl;
     }
     if(operation == "*") {
-        answer = a * b;
+        cout << "Resultado:" << a << " * " << b << " = " << a * b << endl;
     }
     if(operation == "/") {
-        answer = a / b;
+        cout << "Resultado:" << a << " / " << b << " = " << a / b << endl;
     }
     if(operation == "%") {
         float f = a;
@@ -45,11 +47,8 @@ int main() {
 
         int a= static_cast<int>(f);
         int b = static_cast<int>(t);
-        answer = a % b;
+        cout << "Resultado:" << a << " % " << b << " = " << a % b << endl;
     }
-        cout << " The answer is =  " << answer << endl;
-
-
     return 0;
 }
 
