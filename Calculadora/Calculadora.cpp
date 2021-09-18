@@ -30,16 +30,16 @@ int main() {
     //indicamos las posibles opciones que puede introducir e imprimir
 
     if(operation == "+") {
-        cout << "Resultado:" << a << " + " << b << " = " << a + b << endl;
+        cout << "Resultado:" << endl << a << " + " << b << " = " << a + b << endl;
     }
     if(operation == "-") {
-        cout << "Resultado:" << a << " - " << b << " = " << a - b << endl;
+        cout << "Resultado:" << endl << a << " - " << b << " = " << a - b << endl;
     }
     if(operation == "*") {
-        cout << "Resultado:" << a << " * " << b << " = " << a * b << endl;
+        cout << "Resultado:" << endl << a << " * " << b << " = " << a * b << endl;
     }
     if(operation == "/") {
-        cout << "Resultado:" << a << " / " << b << " = " << a / b << endl;
+        cout << "Resultado:" << endl << a << " / " << b << " = " << a / b << endl;
     }
     if(operation == "%") {
         float f = a;
@@ -47,7 +47,7 @@ int main() {
 
         int a= static_cast<int>(f);
         int b = static_cast<int>(t);
-        cout << "Resultado:" << a << " % " << b << " = " << a % b << endl;
+        cout << "Resultado:" << endl << a << " % " << b << " = " << a % b << endl;
     }
     return 0;
 }
